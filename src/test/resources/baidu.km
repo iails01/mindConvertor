@@ -1,0 +1,50 @@
+{
+  "root": {
+    "data": {
+      "text": "root"
+    },
+    "children": [
+      {
+        "data": {
+          "text": "child1"
+        },
+        "children": [
+          {
+            "data": {
+              "text": "child3"
+            },
+            "children": []
+          },
+          {
+            "data": {
+              "text": "child4"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "data": {
+          "text": "child2"
+        },
+        "children": [
+          {
+            "data": {
+              "text": "child5"
+            },
+            "children": []
+          },
+          {
+            "data": {
+              "text": "child6"
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "template": "default",
+  "theme": "fresh-blue",
+  "version": "1.4.43"
+}
