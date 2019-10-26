@@ -33,11 +33,11 @@ public class YDMap {
         return convertor.convert(rootMindTreeNode);
     }
 
-    public void writeMdTo(Path dest, StringConvertor convertor) {
+    public void writeStrTo(Path dest, StringConvertor convertor) {
         if (rootMindTreeNode == null) {
             parse(mindmapPath);
         }
-        try (final BufferedWriter bw = Files.newBufferedWriter(dest);) {
+        try (final BufferedWriter bw = Files.newBufferedWriter(dest)) {
             bw.write(convertor.convert(rootMindTreeNode));
             bw.flush();
         } catch (IOException e) {

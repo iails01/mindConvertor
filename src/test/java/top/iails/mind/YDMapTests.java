@@ -33,7 +33,7 @@ public class YDMapTests {
         final YDMap ydMap = new YDMap(Paths.get(resource.toURI()));
         final MDConvertor mdConvertor = new MDConvertor();
         final Path dest = Paths.get(destResource.toURI());
-        ydMap.writeMdTo(dest, mdConvertor);
+        ydMap.writeStrTo(dest, mdConvertor);
         final byte[] bytes = Files.readAllBytes(dest);
         final String str = new String(bytes, Charset.defaultCharset());
         // hard to test
